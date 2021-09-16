@@ -21,9 +21,9 @@ function clickHandler() {
     fetch(getFinalApi(inputValue))
         .then((response) => response.json())
         .then((json) => {
-            var minionsText = json.contents.translated;
-            console.log(minionsText);
-            txtoutput.innerText = minionsText;
+            var grootText = json.contents.translated;
+            console.log(grootText);
+            txtoutput.innerText = grootText;
         })
         .catch(errorHandler);
 }
