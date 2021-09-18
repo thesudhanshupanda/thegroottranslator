@@ -19,8 +19,8 @@ function clickHandler() {
     var inputValue = txtinput.value;
     
     fetch(getFinalApi(inputValue))
-        .then((response) => response.json())
-        .then((json) => {
+        .then(response => response.json())
+        .then(json => {
             var grootText = json.contents.translated;
             console.log(grootText);
             txtoutput.innerText = grootText;
